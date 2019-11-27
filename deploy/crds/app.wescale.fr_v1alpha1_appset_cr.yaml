@@ -1,0 +1,9 @@
+apiVersion: app.wescale.fr/v1alpha1
+kind: AppSet
+metadata:
+  name: example-weshare
+spec:
+  # Add fields here
+  image: gcr.io/google_containers/echoserver:1.0
+  replicas: 3
+  servicetype: LoadBalancer
