@@ -1,8 +1,8 @@
 # weshare-k8s-operator
 
 ```bash
-operator-sdk build gcr.io/sandbox-bbenlazreg/weshare-operator
-gcloud docker -- push gcr.io/sandbox-bbenlazreg/weshare-operator:latest
+operator-sdk build gcr.io/gcp-project-name/weshare-operator
+gcloud docker -- push gcr.io/gcp-project-name/weshare-operator:latest
 kubectl create -f deploy/service_account.yaml
 kubectl create -f deploy/role.yaml
 kubectl create -f deploy/role_binding.yaml
